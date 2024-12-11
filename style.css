@@ -1,0 +1,193 @@
+ /* General Styles */
+ body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #cc0000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+.container {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Countdown Section */
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.countdown div {
+    background: #cc0000;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 1.5em;
+    text-align: center;
+    width: 100px;
+}
+
+/* Slideshow Section */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.mySlides {
+    display: none;
+    width: 100%;
+    max-height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.event-details {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.event-details h2 {
+    margin-bottom: 10px;
+    color: #cc0000;
+}
+
+.event-details p {
+    margin: 10px 0;
+}
+
+/* Notes Section */
+.notes {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+.notes h3 {
+    color: #cc0000;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.notes p {
+    margin: 5px 0;
+}
+
+/* RSVP Form Section */
+.form-container {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.form-container h3 {
+    margin-bottom: 15px;
+    color: #cc0000;
+}
+
+.form-container a {
+    text-decoration: none;
+}
+
+.form-container button {
+    background: #cc0000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background: #990000;
+}
+
+/* Footer */
+footer {
+    background: #cc0000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 1em; /* Default size */
+    z-index: 10; /* To ensure it stays on top of other content */
+}
+
+footer p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .countdown div {
+        width: 70px;
+        font-size: 1.2em;
+        padding: 15px;
+    }
+
+    .event-details,
+    .notes,
+    .form-container {
+        margin: 10px auto;
+        padding: 15px;
+    }
+
+    footer {
+      margin-top:10px;
+        padding: 12px;
+        font-size: 0.9em;
+    }
+
+    .slideshow-container {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .countdown div {
+        width: 50px;
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .event-details,
+    .notes,
+    .form-container {
+        padding: 10px;
+    }
+
+    footer {
+      margin-top: 10px;
+        padding: 10px;
+        font-size: 0.8em;
+    }
+}
